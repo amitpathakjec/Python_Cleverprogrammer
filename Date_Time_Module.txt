@@ -1,0 +1,57 @@
+# GO AND TAKE HELP FROM MAYA
+import datetime
+import pytz
+
+# Find today's date
+today = datetime.date.today()
+print(today)
+
+birthday = datetime.date(1999, 6 , 18 )
+print(birthday)
+
+# Find days since birth   
+days_since_birth = (today-birthday).days
+print(days_since_birth)
+
+# Adding 10 days to current day
+tdelta = datetime.timedelta(days = 36)
+print(today + tdelta)
+
+# Printing differnt things
+print(today.month)
+print(today.weekday())
+print(today.day)
+print(today.year)
+
+# Monday=0    Sunday=6
+print(datetime.time(7, 2, 20, 15 ))
+#datetime.datetime (Y,M,D)
+#datetime.time (H,M,S,mS)
+#datetime.datetime (H,M,D, H,M,S,mS)
+
+# Add 10hrs to current time
+hours_delta = datetime.timedelta(hours=10)
+print(datetime.datetime.now()+hours_delta)
+
+
+datetime_today = datetime.datetime.now(tz=pytz.UTC) 
+date_pacific =  datetime_today.astimezone(pytz.timezone('US/Pacific'))
+print(date_pacific)
+
+#for tz in pytz.all_timezones:
+#  print(tz)
+
+
+### String formatting with date  ###
+
+# 2020-03-09 -> March 09, 2020
+# strftime  (f=formatting)
+print(date_pacific.strftime('%B,%d,%Y'))
+
+# March, 09,2020 -> 2020-03-09
+# strptime (p=parsing)
+#datetime_aaj = datetime.datetime.strptime('March 09, 2020','%B,%d,%Y')
+#print(repr(datetime_aaj)) 
+print()
+import MAYA
+print(tomorrow = maya.when('tomorrow'))
