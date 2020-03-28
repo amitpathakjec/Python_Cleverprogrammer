@@ -1,0 +1,33 @@
+num = int(input('Enter 1 to draw SQUARE or 2 to draw CIRCLE '))
+if num == 1:
+  a = int(input('Enter the length of side of the square'))
+  import turtle
+  square_turtle = turtle.Turtle()
+
+  def square():
+    square_turtle.forward(a)
+    square_turtle.right(90)
+    square_turtle.forward(a)
+    square_turtle.right(90)
+    square_turtle.forward(a)
+    square_turtle.right(90)
+    square_turtle.forward(a)
+  square() 
+
+  numm = int(input('Press 1 for area or 2 for the circumferenece of given figure '))
+  if numm == 1:
+    print('The area of given figure is '+ str(a*a))
+  else:
+    print('The perimeter of given figure is '+ str(4*a))
+
+else:
+  r = int(input('Enter the radius of the circle to be drawn '))
+  import turtle 
+  t = turtle.Turtle() 
+  t.circle(r) 
+
+  numm1 = int(input('Press 1 for area or 2 for the circumferenece of given figure '))
+  if numm1 == 1:
+    print('The area of given figure is '+ str(3.14*r*r))
+  else:
+    print('The circumference of given figure is '+ str(6.28*r)) 
