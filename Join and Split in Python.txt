@@ -1,0 +1,22 @@
+# Manipulating strings
+
+problem = "broke, pale, short, nerdy"
+print(problem)
+
+l= problem.split(',')
+print(l)
+
+#  this '' is called deliameter
+#m = problem.split('short')
+#print(m)
+print
+
+joined = ' and '.join(l)
+print(joined)
+print
+
+csv = ','.join(l)
+print(csv)
+
+
+

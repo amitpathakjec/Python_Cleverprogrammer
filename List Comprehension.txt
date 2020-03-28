@@ -1,0 +1,31 @@
+names = ['Amit', 'Monica', 'Pradumn']
+print(names)
+
+l=[]
+for person in names:
+  l.append(person)
+print(l)
+  
+print([person for person in names])
+
+l=[]
+for person in names:
+  l.append(person+ ' is known to me')
+print(l)
+
+print(person + ' is ' for person in names)
+print()
+
+
+Movies_and_rating = { "Interseller":9, "Dark knight":8, "50 Shades":3, "50 Shades Darkest":1 }
+
+l = []
+for movie in Movies_and_rating:
+  if Movies_and_rating[movie] > 6:
+    l.append(movie)
+
+print(l)
+print()
+
+print([movie for movie in Movies_and_rating if Movies_and_rating[movie]>6])
+

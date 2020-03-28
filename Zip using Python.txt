@@ -1,0 +1,25 @@
+ list_1 = [1,2,3,4,5,]
+list_2 = ['one', 'two', 'three', 'four', 'five','six']
+
+zipped = list(zip(list_1,list_2))
+print(zipped)
+
+unzipped = zip(*zipped)
+print(unzipped)
+
+for (l1,l2) in zip(list_1,list_2):
+  print(l1)
+  print(l2)
+
+# Example of zip:
+
+items = ['Apple', 'Banana', 'Orange']
+counts = [2,3,4]
+prices = [0.99, 0.25, 0.50]
+
+sentences = []
+for(item,count,price) in zip(items,counts,prices):
+  item,price,count = str(item),str(price),str(count)
+  sentence = 'I bought ' + count + ' ' + item +' @ ' + price
+  sentences.append(sentence)
+print(sentences)  

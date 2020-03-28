@@ -1,0 +1,31 @@
+#Indexing
+
+digits = [0,1,2,3,4,5,6,7,8,9]
+print(digits[0])
+print(digits[3])
+
+#negative indexing is allowed in python
+print(digits[-2])
+print(digits[-len(digits)])
+print(digits[:3])#gives no. upto index 3 excluding last element(starting at index 0)
+print(digits[1:9])
+print(digits[0:10:3])#jumping off every third element
+print(digits[::-1])
+print(digits[0:5:-2])#wont give any o/p because inputs order matters
+print(digits[5:0:-2])
+print()
+
+
+for i in range(len(digits)):
+  print(digits[0:i])
+print()
+print()
+
+
+for i in range(len(digits)-2): 
+  print(digits[i:i+3]) 
+
+
+
+
+
